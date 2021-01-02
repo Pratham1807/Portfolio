@@ -26,6 +26,7 @@ $('.menu li a').on('click', function(e){
         },800);
     }
 });
+
 document.addEventListener('scroll', function onScroll(event){
   var scrollPos = $(document).scrollTop();
   $('.menu a').each(function () {
