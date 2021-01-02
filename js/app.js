@@ -7,3 +7,5 @@ tl.to('.slider', {y: "-100%", duration: 1.5, delay:1.5})
 tl.to('.intro', {y:'-100%', duration: 1}, '-=1')
 
 tl.fromTo('.unhide-animation', {opacity: '0%'}, {opacity: '100%', duration: 1})
+
+document.getElementById("about").display = 'block'
