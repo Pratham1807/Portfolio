@@ -8,4 +8,50 @@ tl.to('.intro', {y:'-100%', duration: 1}, '-=1')
 
 tl.fromTo('.unhide-animation', {opacity: '0%'}, {opacity: '100%', duration: 1})
 
-document.getElementById("about").display = 'block'
+setTimeout(function() {
+    document.getElementsByClassName("no-display").item(0).style.display = 'block'
+  }, 5000);
+
+//smooth scrolling
+$('.menu li a').on('click', function(e){
+    if(this.hash !== ''){
+        e.preventDefault();
+
+        $('.menu li a').removeClass("active");
+        $(this).addClass("active");
+
+        const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        },800);
+    }
+});
+document.addEventListener('scroll', function onScroll(event){
+  var scrollPos = $(document).scrollTop();
+  $('.menu a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('.menu li a').removeClass("active");
+          currLink.addClass("active");
+      }
+      else{
+          currLink.removeClass("active");
+      }
+  });
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

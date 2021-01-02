@@ -3,7 +3,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #161616;
+    background-color: #1a1d22;
 }
 ul{
     list-style: none;
@@ -37,6 +37,8 @@ nav{
     width: 100%;
     box-sizing: border-box;
     padding: 10px 50px;
+    position: fixed;
+    background-color: #1a1d22;
     z-index: 1;
 }
 .menu{
@@ -45,23 +47,22 @@ nav{
 .menu li a{
     padding: 10px 15px;
     color: #dddddd;
-    font-size: 12px;
-
+    font-size: 15px;
 }
-.logo{
-    font-size: 25px;
-    font-weight: bold;
-    color: #d3c5c5;
-    font-family: Poppins;
+
+.menu li a::before{
+    padding: 10px 15px;
+    color: #dddddd;
+    font-size: 15px;
 }
 
 .menu li a:hover,
 .active{
-    background-color: #363636;
-    color: #ffffff !important;
+    border-bottom: 5px solid #25b9d3;
     font-weight: 700;
-    transition: all ease 0.5s;
+    transition: all ease 0.07s;
 }
+
 
 .name{
     font-family: calibri;
@@ -71,7 +72,7 @@ nav{
     top: 40%;
 }
 .name-highlight{
-    color: #25cdd3;
+    color: #25b9d3;
 }
 
 .name p:nth-child(1),
@@ -88,9 +89,7 @@ nav{
     letter-spacing: 3px;
     color: #ffffff;
 }
-.name-highlight{
-    color: #25cdd3;
-}
+
 .cv-btn{
     width: 250px;
     height: 50px;
@@ -105,7 +104,6 @@ nav{
     transform: scale(1.05);
     transition: all ease 0.4s;
 }
-
 
 .intro{
     background: #161616;
@@ -147,12 +145,15 @@ nav{
 }
 
 
+/***********************************************************************************/
+.no-display{
+    display: none;
+}
 
 
 /****************************** ABOUT SECTION ***************************************/
 
 #about{
-    display: none;
 	width:100%;
 	height: 100vh;
 	background-color:#1a1d22;
@@ -163,38 +164,44 @@ nav{
 	padding: 50px 5% 0px 5%;
 	position: relative;
 }
+
 .about-text{
-	font-family: calibri;
+	font-family: "Rubik","Arial",sans-serif;
 	width: 50%;
 }
+
 .about-text h1{
 	font-size: 5rem;
-	color:#17d1ac;
+	color:#25b9d3;
 }
-.about-text h2{
-	font-size: 3rem;
-	color:#FFFFFF;
-	font-weight: 400;
-}
+
 .about-text h1,h2{
 	margin: 0px;
 	padding: 0px;
 }
+
 .about-text p{
-	font-size: 1.2rem;
+    font-family: calibri;
+    width: 650px;
+    line-height: 30px;
+	font-size: 20px;
 	color:rgba(255,255,255,0.90);
 	
 }
+
 .about-text button{
-	width: 180px;
-	height: 40px;
+	width: 200px;
+	height: 45px;
 	border-radius: 20px;
 	border: none;
 	outline: none;
-	background-color:#17d1ac;
+    background-color:#25b9d3;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
+
 .about-text button:hover{
-	background-color: #FFFFFF;
+    transform: scale(1.08);
 	transition: all ease 0.3s;
 }
 
