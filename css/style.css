@@ -224,8 +224,23 @@ nav{
 	position: relative;
 }
 
+#skills h1{
+    text-transform: uppercase;
+    font-family: "Rubik","Arial",sans-serif;
+	width: 50%;
+	font-size: 6rem;
+    color:#25b9d3;
+    position: absolute;
+    top: 36%;
+    left: 15%;
+}
+
+
 .skill-list{
     text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 55%;
 }
 
 .skill-list h3{
@@ -236,6 +251,7 @@ nav{
 
 .bar{
     background: #353b48;
+    width: 450px;
     display: block;
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -252,7 +268,7 @@ nav{
 .bar span{
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)1000%);
+    background: linear-gradient(135deg, rgb(45, 100, 218)0%,rgba(37, 185, 211, 1)100%);
 }
 
 .java{
