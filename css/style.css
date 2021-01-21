@@ -70,7 +70,7 @@ nav{
 /***********************************************************/
 
 
-.name, .about-text, .skill-content, .project-content{
+.name, .about-text, .skill-content, .project-content, .contact-content{
     margin: 35% 10% 30% 10%;
 }
 
@@ -300,4 +300,65 @@ nav{
 }
 .card-back .back-content h2{
     font-size: 40px;
+}
+
+
+
+
+#contact h1{
+    font-family: "Rubik","Arial",sans-serif;
+    color: #25b9d3;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: 80px;
+}
+
+#contact ul{
+    display:flex;
+    position: relative;
+    left: 5%;
+}
+#contact ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 35px;
+    height: 70px;
+    width: 70px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0px 35px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact ul li i{
+    position: relative;
+    top: 8px;
+}
+
+#contact ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: #25b9d3;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+}
+#contact ul li:hover:before{
+    transform: scale(1.2);
+    filter: blur(3px);
+    box-shadow: 0 0 15px #10659e;
+}
+
+#contact ul li:hover{
+    color: #25b9d3;
+    box-shadow: 0 0 15px #10659e;
+    text-shadow: 0 0 15px #10659e;
 }
