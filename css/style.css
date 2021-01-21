@@ -3,25 +3,20 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: calibri;
     background-color: #1a1d22;
 }
 ul{
     list-style: none;
 }
+
 a{
     text-decoration: none;
 }
 
-#main{
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #1a1d22;
-    position: relative;
-    /* background-image: url("../images/bg.png");
-    background-repeat: no-repeat;
-    background-size: 1520px;
-    background-position: right bottom; */
+.content-div{
+    width: 60%;
+    float: right;
 }
 
 nav{
@@ -41,43 +36,50 @@ nav{
     background-color: #1a1d22;
     z-index: 2;
 }
+
+
 .menu{
     display: flex;
 }
 .menu li a{
     padding: 10px 15px;
     color: #dddddd;
-    font-size: 15px;
-}
-
-.menu li a::before{
-    padding: 10px 15px;
-    color: #dddddd;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .menu li a:hover,
 .active{
     border-bottom: 5px solid #25b9d3;
     font-weight: 700;
-    transition: all ease 0.07s;
+    transition: 0.2s ease-in-out;
 }
 
-
-.name{
-    font-family: calibri;
-    width: 650px;
-    position: absolute;
-    left: 15%;
-    top: 40%;
+.fixed-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40%;
 }
+.fixed-img img{
+    height: 100%;
+    width: 100%;
+}
+
+/***********************************************************/
+/***********************************************************/
+
+
+.name, .about-text, .skill-content, .project-content{
+    margin: 35% 10% 30% 10%;
+}
+
 .name-highlight{
     color: #25b9d3;
 }
 
 .name p:nth-child(1),
 .name .details{
-    margin-bottom: 30px;
     color: #ffffff;
     font-size: 20px;
     letter-spacing: 2px;
@@ -105,151 +107,38 @@ nav{
     transition: all ease 0.4s;
 }
 
-.intro{
-    background: #161616;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro-text{
-    color: #ffffff;
-    font-family: "Rubik","Arial",sans-serif;
-    font-size: 3rem;
-    letter-spacing: 10px;
-}
-
-.slider{
-    background: #3c4452;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-}
-
-.hide{
-    background: #161616;
-    overflow: hidden;
-}
-
-.hide div{
-    transform: translateY(100%);
-    /*display: inline-block;*/
-}
-
-
-/***********************************************************************************/
-.no-display{
-    display: none;
-}
-
-
-/****************************** ABOUT SECTION ***************************************/
-
-#about{
-	width:100%;
-	height: 100vh;
-	background-color:#1a1d22;
-	box-sizing: border-box;
-    display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 50px 5% 0px 5%;
-	position: relative;
-}
-
-.about-text{
-	font-family: "Rubik","Arial",sans-serif;
-	width: 50%;
-}
+/***********************************************************/
+/***********************************************************/
 
 .about-text h1{
-	font-size: 5rem;
-	color:#25b9d3;
-}
-
-.about-text h1,h2{
-	margin: 0px;
-	padding: 0px;
+    color: #25b9d3;
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
 }
 
 .about-text p{
-    font-family: calibri;
-    width: 650px;
-    line-height: 30px;
-	font-size: 20px;
-	color:rgba(255,255,255,0.90);
-	
-}
-
-.about-text button{
-	width: 200px;
-	height: 45px;
-	border-radius: 20px;
-	border: none;
-	outline: none;
-    background-color:#25b9d3;
     color: #ffffff;
+    font-size: 25px;
     letter-spacing: 1px;
-}
-
-.about-text button:hover{
-    transform: scale(1.08);
-	transition: all ease 0.3s;
+    line-height: 30px;
 }
 
 
+/***********************************************************/
+/***********************************************************/
 
 
-
-
-
-
-#skills{
-	width:100%;
-	height: 100vh;
-	background-color:#1a1d22;
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 50px 5% 0px 5%;
-	position: relative;
-}
-
-#skills h1{
-    text-transform: uppercase;
+.skill-heading{
     font-family: "Rubik","Arial",sans-serif;
-	font-size: 6rem;
-    color:#25b9d3;
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    transition: 0.5s;
-    padding: 90px;
+    color: #25b9d3;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
 }
-#skills h1:hover{
-    color: #35adc2;
-    text-shadow: 0 0 10px #2d64da,
-                0 0 20px #2d64da,
-                0 0 40px #2d64da,
-                0 0 80px #2d64da,
-                0 0 1200px #2d64da;
-}
-
 
 .skill-list{
     text-transform: uppercase;
-    position: absolute;
-    top: 30%;
-    left: 55%;
 }
 
 .skill-list h3{
@@ -257,10 +146,13 @@ nav{
     margin-top: 20px;
     margin-bottom: 2px;
 }
+.skill-list .list{
+    padding-left: 8px;
+}
 
 .bar{
     background: #353b48;
-    width: 450px;
+    width: 70%;
     display: block;
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -341,119 +233,71 @@ nav{
     }
 }
 
+/***********************************************************/
+/***********************************************************/
 
-
-#projects{
-	width:100%;
-	height: 100vh;
-	background-color:#1a1d22;
-	box-sizing: border-box;
-}
-
-#projects .project-title h1{
-    text-transform: uppercase;
-    text-align: center;
+#projects h1{
     font-family: "Rubik","Arial",sans-serif;
-	font-size: 5rem;
-    color:#25b9d3;
-    transition: 0.5s;
-    margin-top: 100px;
-
+    color: #25b9d3;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
 }
 
-.projects-deck{
-    position: relative;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
+.card-deck{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
-.projects-deck .card{
-    position: relative;
-    max-width: 300px;
-    height: 215px;
-    background: #ffffff;
-    margin: 30px 20px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 202px rbga(0,0,0,0.5);
-    transition: 0.3s ease-in-out;
+.card{
+    cursor: pointer;
+    height: 400px;
+    width: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #ffffff;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
 }
 
-.projects-deck .card:hover{
-    height: 420px;
+.card-holder:hover .card{
+    transform: rotateY(180deg);
 }
 
-.projects-deck .card .imgBox{
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    z-index: 1;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+.card-front{
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
 }
-
-.projects-deck .card .imgBox img{
-    max-width: 100%;
-    border-radius: 4px;
+.card-front .img-box{
+    height: 80%;
+    width: 100%;
 }
-
-.projects-deck .card .content{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    color: #111111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out; 
+.card-front .img-box img{
+    height: 100%;
+    width: 100%;
 }
-
-
-.projects-deck .card:hover .content{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
-
-
-
-
-
-
-
-
-
-
-
-#contact{
-	width:100%;
-	height: 100vh;
-	background-color:#1a1d22;
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 50px 5% 0px 5%;
-	position: relative;
-}
-
-#contact h1{
+.project-title{
     text-transform: uppercase;
-    font-family: "Rubik","Arial",sans-serif;
-	width: 50%;
-	font-size: 6rem;
-    color:#25b9d3;
-    position: absolute;
-    top: 36%;
-    left: 15%;
-    transition: 0.5s;
+    height: 20%;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-
+.card-back{
+    height: 100%;
+    width: 100%;
+    transform: translateY(-400px) rotateY(180deg);
+    background: #111111;
+    backface-visibility: hidden;
+}
+.card-back .back-content{
+    padding: 20px;
+    text-align: center;
+}
+.card-back .back-content h2{
+    font-size: 40px;
+}
