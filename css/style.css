@@ -15,8 +15,8 @@ a{
 }
 
 .content-div{
-    width: 60%;
-    float: right;
+    margin-left: 50%;
+    margin-right: 5%;
 }
 
 nav{
@@ -69,9 +69,29 @@ nav{
 /***********************************************************/
 /***********************************************************/
 
-
-.name, .about-text, .skill-content, .project-content, .contact-content{
+/* .name{
+    margin-top: 45%;
+    margin-bottom: 40%;
+}
+.about-text{
+    margin-top: 40%;
+    margin-bottom: 40%;
+} */
+/* .name, .about-text, .skill-content, .project-content, .contact-content{
     margin: 35% 10% 30% 10%;
+} */
+
+
+
+
+
+
+/***********************************************************/
+/***********************************************************/
+
+#main{
+    padding-top: 23%;
+    padding-bottom: 15%;
 }
 
 .name-highlight{
@@ -110,6 +130,11 @@ nav{
 /***********************************************************/
 /***********************************************************/
 
+#about{
+    padding-top: 17%;
+    padding-bottom: 12%;
+}
+
 .about-text h1{
     color: #25b9d3;
     font-family: "Rubik","Arial",sans-serif;
@@ -128,6 +153,10 @@ nav{
 /***********************************************************/
 /***********************************************************/
 
+#skills{
+    padding-top: 10%;
+    padding-bottom: 8%;
+}
 
 .skill-heading{
     font-family: "Rubik","Arial",sans-serif;
@@ -235,6 +264,10 @@ nav{
 
 /***********************************************************/
 /***********************************************************/
+#projects{
+    padding-top: 8%;
+    padding-bottom: 6%;
+}
 
 #projects h1{
     font-family: "Rubik","Arial",sans-serif;
@@ -303,7 +336,14 @@ nav{
 }
 
 
+/***********************************************************/
+/***********************************************************/
 
+
+#contact{
+    padding-top: 16%;
+    padding-bottom: 14%;
+}
 
 #contact h1{
     font-family: "Rubik","Arial",sans-serif;
@@ -313,31 +353,7 @@ nav{
     margin-bottom: 80px;
 }
 
-#contact ul{
-    display:flex;
-    position: relative;
-    left: 5%;
-}
-#contact ul li{
-    position: relative;
-    display: block;
-    color: #666;
-    font-size: 35px;
-    height: 70px;
-    width: 70px;
-    background: #171515;
-    line-height: 60px;
-    border-radius: 50%;
-    margin: 0px 35px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-#contact ul li i{
-    position: relative;
-    top: 8px;
-}
-
+/* 
 #contact ul li:before{
     position: absolute;
     content: '';
@@ -361,4 +377,4 @@ nav{
     color: #25b9d3;
     box-shadow: 0 0 15px #10659e;
     text-shadow: 0 0 15px #10659e;
-}
+} */
