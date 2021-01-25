@@ -29,7 +29,7 @@ $('.menu li a').on('click', function(e){
 });
 
 document.addEventListener('scroll', function onScroll(event){
-  var scrollPos = $(document).scrollTop();
+  var scrollPos = $(document).scrollTop() + 1;
   $('.menu a').each(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));

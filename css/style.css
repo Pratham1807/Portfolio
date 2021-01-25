@@ -341,8 +341,8 @@ nav{
 
 
 #contact{
-    padding-top: 16%;
-    padding-bottom: 14%;
+    padding-top: 14%;
+    padding-bottom: 8%;
 }
 
 #contact h1{
@@ -350,7 +350,7 @@ nav{
     color: #25b9d3;
     font-size: 60px;
     letter-spacing: 3px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 #contact .social-media-icons ul li{
