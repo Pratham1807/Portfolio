@@ -350,31 +350,29 @@ nav{
     color: #25b9d3;
     font-size: 60px;
     letter-spacing: 3px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
-/* 
-#contact ul li:before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    background: #25b9d3;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    z-index: -1;
-    transform: scale(0.9);
-    transition: all 0.3s ease-in-out;
+#contact .social-media-icons ul li{
+    font-size: 25px;
+    padding: 20px;
+    transform: translateX(10px);
+    color: #dddddd;
+    width: fit-content;
+    cursor: pointer;
+    text-shadow: none;
+    transition: all 0.5s ease-in-out;
 }
-#contact ul li:hover:before{
-    transform: scale(1.2);
-    filter: blur(3px);
-    box-shadow: 0 0 15px #10659e;
+#contact .social-media-icons ul li:hover{
+    text-shadow: 0 0 1px #0c7dda,
+    0 0 5px #0c7dda,
+    0 0 10px #0c7dda,
+    0 0 15px #0c7dda,
+    0 0 20px #0c7dda;
+    transform: scale(1.1) translate(5%);
 }
-
-#contact ul li:hover{
-    color: #25b9d3;
-    box-shadow: 0 0 15px #10659e;
-    text-shadow: 0 0 15px #10659e;
-} */
+#contact .social-media-icons ul li i{
+    font-size: 30px;
+    margin-right: 40px;
+    transform: translateY(4px);
+}
