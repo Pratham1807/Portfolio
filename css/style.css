@@ -12,6 +12,7 @@ ul{
 
 a{
     text-decoration: none;
+    color: #dddddd;
 }
 
 .content-div{
@@ -341,10 +342,9 @@ nav{
 
 
 #contact{
-    padding-top: 14%;
+    padding-top: 15%;
     padding-bottom: 8%;
 }
-
 #contact h1{
     font-family: "Rubik","Arial",sans-serif;
     color: #25b9d3;
@@ -352,7 +352,6 @@ nav{
     letter-spacing: 3px;
     margin-bottom: 60px;
 }
-
 #contact .social-media-icons ul li{
     font-size: 25px;
     padding: 20px;

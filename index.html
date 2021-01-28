@@ -17,6 +17,10 @@
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
+        <!--aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     </head>
     <body>
         <section id="main">
@@ -43,7 +47,7 @@
         </section>
 
         <section id="about">
-            <div class="content-div">
+            <div class="content-div" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false">
                 <div class="about-text">
                     <h1>About Me</h1>
                     <p>I am a final year student at Maharaja Surajmal Institute of Technology pursuing B.Tech in Computer Science and Engineering and I love to code.</p>
@@ -53,25 +57,25 @@
         </section>
 
         <section id="skills">
-            <div class="content-div">
+            <div class="content-div" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                 <div class="skill-content">
                     <h1 class="skill-heading">Skills</h1>
                     <div class="skill-list">
                         <ul class="list">
                             <li><h3>Java</h3>
-                                <span class="bar"><span class="java"></span></span>
+                                <span class="bar"><span class="java-hidden"></span></span>
                             </li>
                             <li><h3>Data Structures and Algorithms</h3>
-                                <span class="bar"><span class="dsa"></span></span>
+                                <span class="bar"><span class="dsa-hidden"></span></span>
                             </li>
                             <li><h3>Python</h3>
-                                <span class="bar"><span class="python"></span></span>
+                                <span class="bar"><span class="python-hidden"></span></span>
                             </li>
                             <li><h3>Machine Learning</h3>
-                                <span class="bar"><span class="ml"></span></span>
+                                <span class="bar"><span class="ml-hidden"></span></span>
                             </li>
                             <li><h3>Web Development</h3>
-                                <span class="bar"><span class="webdev"></span></span>
+                                <span class="bar"><span class="webdev-hidden"></span></span>
                             </li>
                         </ul>
                     </div>
@@ -80,7 +84,7 @@
         </section>
 
         <section id="projects">
-            <div class="content-div">
+            <div class="content-div" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false">
                 <div class="project-content">
                     <h1>Projects</h1>
                     <div class="card-deck">
@@ -130,14 +134,14 @@
         </section>
 
         <section id="contact">
-            <div class="content-div">
+            <div class="content-div" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false">
                 <div class="contact-content">
                     <h1>Contact Me</h1>
                     <div class="social-media-icons">
                         <ul>
-                            <li><i class="far fa-envelope"></i>pratham1807@gmail.com</li>
-                            <li><i class="fab fa-github"></i>github.com/Pratham1807</li>
-                            <li><i class="fab fa-linkedin"></i>linkedin.com/in/prathamsharma99</li>
+                            <li><a href="mailto:pratham1807@gmail.com"><i class="far fa-envelope"></i>pratham1807@gmail.com</a></li>
+                            <li><a href="https://github.com/Pratham1807" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>github.com/Pratham1807</a></li>
+                            <li><a href="https://www.linkedin.com/in/prathamsharma99/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>linkedin.com/in/prathamsharma99</a></li>
                         </ul>
                     </div>
                 </div>
@@ -147,6 +151,12 @@
 
         <!--custom scripts-->
         <script src="js/app.js"></script>
+
+        <!--aos-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
     </body>
 </html>

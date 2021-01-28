@@ -14,7 +14,7 @@
 
 //smooth scrolling
 $('.menu li a').on('click', function(e){
-    console.log(this.hash);
+    // console.log(this.hash);
     if(this.hash !== ''){
         e.preventDefault();
 
@@ -28,6 +28,8 @@ $('.menu li a').on('click', function(e){
     }
 });
 
+revealedskills = false;
+
 document.addEventListener('scroll', function onScroll(event){
   var scrollPos = $(document).scrollTop() + 1;
   $('.menu a').each(function () {
@@ -38,9 +40,25 @@ document.addEventListener('scroll', function onScroll(event){
           currLink.addClass("active");
       }
       else{
-          currLink.removeClass("active");
+          currLink.removeClass("active");   
       }
   });
+
+  var skillSectionScrollPos = $('#skills').position().top;
+  if(skillSectionScrollPos < scrollPos && !revealedskills){
+      console.log("reveal skills!!!");
+
+      const skill = ['java', 'python', 'dsa', 'ml', 'webdev'];
+      
+      skill.forEach(element => {
+          console.log(element + '-hidden ----> '+ element);
+          $('.' + element + '-hidden').attr('class', element);
+      });
+
+      revealedskills = true;
+  }
+
+
 })
 
 
