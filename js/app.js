@@ -12,9 +12,11 @@
 //     document.getElementsByClassName("no-display").item(0).style.display = 'block'
 //   }, 5000);
 
+
+
+
 //smooth scrolling
 $('.menu li a').on('click', function(e){
-    // console.log(this.hash);
     if(this.hash !== ''){
         e.preventDefault();
 
@@ -54,12 +56,16 @@ document.addEventListener('scroll', function onScroll(event){
           console.log(element + '-hidden ----> '+ element);
           $('.' + element + '-hidden').attr('class', element);
       });
-
+      
       revealedskills = true;
   }
+});
 
-
-})
+if (document.documentElement.clientWidth < 840) {
+    $('.menu li a').on("click", function(){
+        $('#check').prop("checked",false);
+    });
+}
 
 
 

@@ -25,6 +25,10 @@
     <body>
         <section id="main">
             <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <a href="#" class="logo"></a>
                 <ul class="menu">
                     <li><a href="#main" class="active">Home</a></li>
@@ -34,21 +38,26 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="fixed-img">
-                <img src="images/s2.png" alt="Pratham Sharma">
-            </div>
-            <div class="content-div">
-                <div class="name">
-                    <h1>Hi, I'm <span class="name-highlight">Pratham Sharma</span></h1>
-                    <p class="details">A Software Development Engineer Intern @ Amazon</p>
-                    <a href="https://drive.google.com/file/d/19q9LO_3v5n3yv9hj8vcfpBjKWXl6u7GK/view?usp=sharing" class="cv-btn" download="Pratham's Resume">Download Resume</a>
+            <div class="row home-row">
+                <div class="col-5 col-s-12 fixed-img">
+                    <img src="images/s2.png" alt="Pratham Sharma">
+                </div>
+                <div class="col-5 col-s-12 empty-col"></div>
+                <div class="col-7 col-s-12">
+                    <div class="name">
+                        <h1>Hi, I'm <span class="name-highlight">Pratham Sharma</span></h1>
+                        <p class="details">A Software Development Engineer Intern @ Amazon</p>
+                        <a href="https://drive.google.com/file/d/19q9LO_3v5n3yv9hj8vcfpBjKWXl6u7GK/view?usp=sharing" class="cv-btn" download="Pratham's Resume">Download Resume</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="about">
-            <div class="content-div" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false">
-                <div class="about-text">
+            <div class="col-5 col-s-12 empty-col">             
+            </div>
+            <div class="col-7 col-s-12">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1500">
                     <h1>About Me</h1>
                     <p>I am a final year student at Maharaja Surajmal Institute of Technology pursuing B.Tech in Computer Science and Engineering and I love to code.</p>
                     <a href="#" class="cv-btn">More Details</a>
@@ -57,8 +66,10 @@
         </section>
 
         <section id="skills">
-            <div class="content-div" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
-                <div class="skill-content">
+            <div class="col-5 col-s-12 empty-col">
+            </div>
+            <div class="col-7 col-s-12">
+                <div class="skill-content" data-aos="fade-right" data-aos-duration="1500">
                     <h1 class="skill-heading">Skills</h1>
                     <div class="skill-list">
                         <ul class="list">
@@ -83,47 +94,57 @@
             </div>
         </section>
 
+
         <section id="projects">
-            <div class="content-div" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false">
-                <div class="project-content">
-                    <h1>Projects</h1>
-                    <div class="card-deck">
-                        <div class="card-holder">
-                            <div class="card">
-                                <div class="card-front">
-                                    <div class="img-box">
-                                        <img src="images/s1.png" alt="">
+            <div class="col-5 col-s-12 empty-col"></div>
+            <div class="col-7 col-s-12">
+                <div class="project-content" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Projects</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-s-12">
+                            <div class="card-holder">
+                                <div class="card">
+                                    <div class="card-front">
+                                        <div class="img-box">
+                                            <img src="images/s1.png" alt="">
+                                        </div>
+                                        <div class="project-title">Partner Portal</div>
                                     </div>
-                                    <div class="project-title">Partner Portal</div>
-                                </div>
-                                <div class="card-back">
-                                    <div class="back-content">
-                                        <h2>
-                                            Partner Portal
-                                        </h2>
-                                        <p>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus fuga modi a porro deleniti blanditiis eveniet magni doloribus dolore laudantium dolorum nemo perferendis numquam magnam eius officia architecto, atque voluptatem.
-                                        </p>
+                                    <div class="card-back">
+                                        <div class="back-content">
+                                            <h2>
+                                                Partner Portal
+                                            </h2>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus fuga modi a porro deleniti blanditiis eveniet magni doloribus dolore laudantium dolorum nemo perferendis numquam magnam eius officia architecto, atque voluptatem.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-holder">
-                            <div class="card">
-                                <div class="card-front">
-                                    <div class="img-box">
-                                        <img src="images/s1.png" alt="">
+                        <div class="col-6 col-s-12">
+                            <div class="card-holder">
+                                <div class="card">
+                                    <div class="card-front">
+                                        <div class="img-box">
+                                            <img src="images/s1.png" alt="">
+                                        </div>
+                                        <div class="project-title">Employee Module</div>
                                     </div>
-                                    <div class="project-title">Employee Module</div>
-                                </div>
-                                <div class="card-back">
-                                    <div class="back-content">
-                                        <h2>
-                                            Employee Module
-                                        </h2>
-                                        <p>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus fuga modi a porro deleniti blanditiis eveniet magni doloribus dolore laudantium dolorum nemo perferendis numquam magnam eius officia architecto, atque voluptatem.
-                                        </p>
+                                    <div class="card-back">
+                                        <div class="back-content">
+                                            <h2>
+                                                Employee Module
+                                            </h2>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus fuga modi a porro deleniti blanditiis eveniet magni doloribus dolore laudantium dolorum nemo perferendis numquam magnam eius officia architecto, atque voluptatem.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -133,9 +154,11 @@
             </div>
         </section>
 
+
         <section id="contact">
-            <div class="content-div" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false">
-                <div class="contact-content">
+            <div class="col-5 col-s-12 empty-col"></div>
+            <div class="col-7 col-s-12">
+                <div class="contact-content" data-aos="fade-right" data-aos-duration="1500">
                     <h1>Contact Me</h1>
                     <div class="social-media-icons">
                         <ul>
@@ -148,6 +171,7 @@
             </div>
         </section>
 
+        <hr>
 
         <!--custom scripts-->
         <script src="js/app.js"></script>
