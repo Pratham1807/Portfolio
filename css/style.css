@@ -463,7 +463,7 @@ nav ul{
         width: 100%;
         height : 100vh;
         background: #272c36;
-        top: -100%;
+        top: -130%;
         left: 0;
         text-align: center;
         transition: all 0.5s ease-in-out;
