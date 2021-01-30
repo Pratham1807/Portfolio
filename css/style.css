@@ -459,11 +459,12 @@ nav ul{
         display: block;
     }
     nav ul{
+        display: none !important;
         position: fixed;
         width: 100%;
         height : 100vh;
         background: #272c36;
-        top: -130%;
+        top: -100%;
         left: 0;
         text-align: center;
         transition: all 0.5s ease-in-out;
@@ -640,6 +641,10 @@ nav ul{
         /* margin: auto; */
     }
 
+    #contact .social-media-icons ul li i {
+        font-size: 27px;
+        margin-right: 16px;
+    }
 
 }
 
