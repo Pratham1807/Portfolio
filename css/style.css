@@ -668,6 +668,7 @@ nav ul{
     #contact .social-media-icons ul li i {
         font-size: 23px;
         margin-right: 0;
+        transform: translateY(0);
     }
     #contact .social-media-icons ul li span {
         display: block;
